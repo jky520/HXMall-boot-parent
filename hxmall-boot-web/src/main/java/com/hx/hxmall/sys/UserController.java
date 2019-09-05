@@ -1,6 +1,6 @@
 package com.hx.hxmall.sys;
 
-import com.hx.hxmall.entity.sys.User;
+import com.hx.hxmall.dao.common.R;
 import com.hx.hxmall.service.UserService;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
@@ -16,7 +16,7 @@ public class UserController {
     private UserService userService;
 
     @GetMapping("/{id}")
-    public User show(@PathVariable int id) {
-        return userService.load(id);
+    public R show(@PathVariable int id) {
+        return R.isOk().data(userService.load(id));
     }
 }
