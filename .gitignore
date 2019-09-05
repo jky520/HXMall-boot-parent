@@ -1,0 +1,13 @@
+# Project exclude paths
+/hxmall-boot-dao/target/
+/hxmall-boot-entity/target/
+/hxmall-boot-service/target/
+/hxmall-boot-web/target/
+### Example user template template
+### Example user template
+
+# IntelliJ project files
+.idea
+*.iml
+out
+gen
